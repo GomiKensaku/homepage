@@ -642,33 +642,28 @@ However, for instance, ''<em>x</em> is <em>x</em>'' ⇒ -(''<em>x</em> is <em>x<
 </dl>
 </blockquote>
 <p>
-This proof and certain logical laws show that there exists a paradoxical event if and only if X ⇒ Y for each pair (X,Y) of events.
-</p>
-<p>
-I define a <span>paradox</span> as an argument which is incorrect because its conclusion is a nonexistent paradoxical event.
+I define a <span>paradox</span> as a reasoning which concludes that there exists a paradoxical event, which is incorrect according to Proposition on Paradoxes.
 Incidentally, ''para-'' in particular means ''incorrect'' and ''dox'' derives from ''dokein'' meaning ''to think.''
 </p>
 <h3>Examples of Paradoxes</h3>
 <blockquote>
-Example 1. Achilles does not catch up a tortoise:<br>
-Achilles run a race with a tortoise.
-It starts <em>a</em> meters ahead of him.
-He and it run <em>b</em> meters and <em>c</em> meters a second, respectively, and <em>b</em> is longer than <em>c</em>.
-Then the distance between him and it shorten <em>b-c</em> meters a second, and so becomes zero after <em>a/(b-c)</em> seconds; that is, he catches up it at that time.
-<span>On the other hand</span>, he arrives at its starting point after <em>a/b</em> seconds, when it is <em>ac/b</em> meters ahead of him.
-He arrives at the point after <em>ac/b<sup>2</sup></em> seconds, when it is <em>ac<sup>2</sup>/b<sup>2</sup></em> meters ahead of him.
-He arrives at the point after <em>ac<sup>2</sup>/b<sup>3</sup></em> seconds, when it is <em>ac<sup>3</sup>/b<sup>3</sup></em> meters ahead of him.
- ...
-Therefore, it is <span>always</span> ahead of him, and so he does not catch up it.
+Example 1. Achilles does not catch up with the tortoise:<br>
+Achilles runs a race with a tortoise.
+The tortoise starts <em>a</em> meters ahead of him.
+Achilles and the tortoise run at <em>b</em> meters per second and <em>c</em> meters per second, respectively, with <em>b</em> greater than <em>c</em>.
+Then, the distance between them decreases at a rate of <em>(b – c)</em> meters per second, and becomes zero after <em>a/(b – c)</em> seconds; that is, Achilles catches up with the tortoise at that time.
+<span>On the other hand</span>, he reaches the tortoise's starting point after <em>a/b</em> seconds, by which time the tortoise has moved <em>ac/b</em> meters ahead.
+He then reaches that new point after <em>ac/b<sup>2</sup></em> seconds, by which time the tortoise has moved <em>ac<sup>2</sup>/b<sup>2</sup></em> meters further.
+He reaches that point after <em>ac<sup>2</sup>/b<sup>3</sup></em> seconds, when the tortoise is <em>ac<sup>3</sup>/b<sup>3</sup></em> meters ahead; <span>and so on</span>.
+Therefore, the tortoise remains ahead of Achilles, <span>always</span>, and he does not catch up with the tortoise.
 </blockquote>
 <p>
-This asserts that both the event ''He catches up it'' and the event ''He does not catch up it'' are inevitable, hence ''He catches up it'' is paradoxical.
-There must be a mistake here by <a href="#IMPOSSIBLE">Proposition on Paradoxes</a>.
-There is no mistake before ''On the other hand.''
-There is a mistake after that.
-The time in which it is ahead of him is less than <em>(a/b + ac/b<sup>2</sup> + ac<sup>2</sup>/b<sup>3</sup> + ・・・)</em> seconds, which is equal to <em>a/(b-c)</em> seconds; that is, the time in which he catches up it.
-Therefore, the description after ''On the other hand'' until ''...'' in fact means ''It is ahead of him <span>until he catches up it</span>,'' which is correct.
-The mistake exists in replacing ''until	 he catches up it'' with ''always.''
+This reasoning concludes that both the event ''Achilles catches up with the tortoise'' and its negation are inevitable; hence, it is paradoxical.
+According to <a href="#IMPOSSIBLE">Proposition on Paradoxes</a>, there must be a mistake here.
+The total time during which the tortoise remains ahead of Achilles is less than the infinite sum <em>(a/b + ac/b<sup>2</sup> + ac<sup>2</sup>/b<sup>3</sup> + ・・・)</em>, which is equal to <em>a/(b-c)</em> seconds &mdash; the exact time at which Achilles catches up with the tortoise.
+Therefore, the description following ''On the other hand'' up to ''and so on'' at most means ''The tortoise remains ahead of Achilles, <span>until he catches up with it</span>,''  
+which is correct.
+The mistake lies in replacing ''until he catches up with it'' with ''always.''
 </p>
 <blockquote>Example 2. There is a declarative which is both false and not false:<br>
 Consider the declarative ''<span>This declarative</span> is false.''
@@ -677,13 +672,15 @@ If it is not false, then it is false.
 </blockquote>
 <p>
 Let A denote the event ''This declarative is not false.''
-Then this argues that -A ⇒ A and A ⇒ -A, hence it is paradoxical by the <a href="#LAW7">laws 7 and 8</a> above.
-There must be a mistake here by <a href="#IMPOSSIBLE">Proposition on Paradoxes</a>.
-Let B denote the first underlined expression ''this declarative.''
-Then the second underlined expression ''this declarative'' refers to ''B is false.''
+Then this reasoning concludes that -A ⇒ A and A ⇒ -A.
+Hence it is paradoxical by the <a href="#LAW7">laws 7 and 8</a> above.
+According to <a href="#IMPOSSIBLE">Proposition on Paradoxes</a>, there must be a mistake here.
+Let B denote ''This declarative.''
+Then ''this declarative'' refers to the declarative ''B is false.''
 Let C denote it.
-Then the above argument in fact shows that B is false if and only if C is not false, hence B is not equal to C.
-The above argument, however, seems to assume that B is equal to C because the word ''this declarative'' is ambiguous.
+Then the above reasoning in fact concludes that B is false if and only if C is not false, which is correct.
+Hence B is not equal to C.
+Probably, misled by the ambiguity of the word ''this declarative,'' the above reasoning assumed that B is equal to C, hence concluded that B and C are both false and not false.
 </p>
 <blockquote>
 Example 3. Inexpressible entities are expressible:<br>
@@ -692,9 +689,9 @@ Then <em>a</em> is expressible as ''one of the entities which are inexpressible,
 Thus, <em>a</em> is not <em>a</em>.
 </blockquote>
 <p>
-This asserts that the event ''<em>a</em> is not <em>a</em>'' is inevitable, hence paradoxical, because the event ''<em>a</em> is <em>a</em>'' is also inevitable.
-There must be a mistake here by <a href="#IMPOSSIBLE">Proposition on Paradoxes</a>.
-In fact, after expressing an entity as ''inexpressible entity,'' it is lying as ''it is an inexpressible entity.''
+This reasoning concludes that the event ''<em>a</em> is not <em>a</em>'' is inevitable, hence paradoxical, because its negation ''<em>a</em> is <em>a</em>'' is also inevitable.
+According to <a href="#IMPOSSIBLE">Proposition on Paradoxes</a>, there must be a mistake here.
+In fact, after expressing an entity as ''an inexpressible entity,'' it is lying as ''it is an inexpressible entity.''
 There is another mistake.
 Every entity is expressible, even by one letter, as has been shown by the above sentence ''Let <em>a</em> denote one of the entities which are inexpressible.''
 Similar remarks apply to the paradoxes obtained by replacing ''express'' by ''explain'' and ''define.''
@@ -710,10 +707,11 @@ If <em>A</em> does not satisfy <em>A ∈ A</em>, then <em>A</em> satisfies <em>A
 </blockquote>
 <p>
 Let B denote the event ''<em>A</em> does not satisfy <em>A ∈ A</em>.''
-Then Russel asserts above that -B ⇒ B and B ⇒ -B, hence B is paradoxical by the <a href="#LAW7">laws 7 and 8</a> above.
-There must be a mistake here by <a href="#IMPOSSIBLE">Proposition on Paradoxes</a>.
+Then Russel concluded above that -B ⇒ B and B ⇒ -B.
+Hence B is paradoxical by the <a href="#LAW7">laws 7 and 8</a> above.
+According to <a href="#IMPOSSIBLE">Proposition on Paradoxes</a>, there must be a mistake here.
 As shown above, it was found out in noological set theory.
-It is a pity that the initiators of naïve set theory could not find out it and proceeded to axiomatic set theory.
+It is a pity that the initiators of naïve set theory could not find out it and some of them proceeded to axiomatic set theory.
 </p>
 <h2>&sect;4. Noocosmos, Noosystem, and Noolanguage</h2>
 <p>
