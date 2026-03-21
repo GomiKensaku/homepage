@@ -123,9 +123,9 @@ Observation of language also shows that each event is either an attribute of an 
 For instance, the event ''UFOs are round'' is an attribute of the entity ''UFOs'' and the event ''are round'' is the attribute itself.
 The event ''Peter eats a radish'' is a relation between the entities ''Peter'' and ''a radish,'' and the event ''eats'' is the relation itself.
 The event ''Peter eats a radish'' is also an attribute of the entity ''Peter'' and the event ''eats a radish'' is the attribute itself, which is also an attribute of the entity ''a radish,'' showing that someone eats ''a radish,'' and the event ''eats'' is also the attribute itself.
-Therefore, each event A may involve some entities a<sub>1</sub>, ..., a<sub>n</sub> for some positive integer n, so that A is sometimes denoted by A(a<sub>1</sub>, ..., a<sub>n</sub>).
-Here a<sub>1</sub>, ..., a<sub>n</sub> may not be all of the entities involved.
-For instance, if ''Peter eats a radish,'' ''Peter,'' and ''a radish'' are denoted by A, b, and c, respectively, then A may also be denoted by A(b), A(c), A(b,c), and A(c,b).
+Therefore, each event A may involve some entities <em>a</em><sub>1</sub>, ..., <em>a</em><sub>n</sub> for some positive integer n, so that A is sometimes denoted by A(<em>a</em><sub>1</sub>, ..., <em>a</em><sub>n</sub>).
+Here, <em>a</em><sub>1</sub>, ..., <em>a</em><sub>n</sub> may not be all of the entities involved.
+For instance, if ''Peter eats a radish,'' ''Peter,'' and ''a radish'' are denoted by A, <em>b</em>, and <em>c</em>, respectively, then A may also be denoted by A(<em>b</em>), A(<em>c</em>), A(<em>b</em>,<em>c</em>), and A(<em>c</em>,<em>b</em>).
 </p>
 <p>
 Let A<sub>1</sub>, ..., A<sub>n</sub>, and B denote events, where n is a nonnegative integer; if n = 0, A<sub>1</sub>, ..., A<sub>n</sub> do not exist.
@@ -149,7 +149,7 @@ Obviously, if B is necessary, then A<sub>1</sub>, ..., A<sub>n</sub> ⇒ B for e
 If B is not necessary, we naturally say that B is <span>unnecessary</span> or <span>evitable</span> or <span>avoidable</span>.
 If the negation of B is necessary, we say that B is <span>impossible</span>.
 If B is not impossible, we naturally say that B is <span>possible</span>.
-If B is not either necessary or impossible, that is, if B is unnecessary and possible, we say that B is <span>contingent</span>.
+If B is neither necessary nor impossible, that is, if B is unnecessary and possible, we say that B is <span>contingent</span>.
 As will be shown by ''<a href="#IMPOSSIBLE">Proposition on Paradoxes</a>,'' no event is both necessary and impossible.
 Therefore, every event is either unnecessary or possible.
 In other words, necessary events are possible, and impossible events are unnecessary.
@@ -831,7 +831,7 @@ In order to proceed further, the following mechanical and evolutionary hypothese
 <dd>Hypothesis 2. The PU consists of all perceptors and a set of generative operations acting on them.
 These operations generate all perceptors from a set of fundamental perceptors.</dd>
 <dd>Hypothesis 3. The RU consists of all evential perceptors and a set of deductive operations acting on them.
-As a result of evolutionary development, if such an operation assigns an evential percept b to a tuple (a<sub>1</sub>, ..., a<sub>n</sub>) of evential percepts, then their objects B, A<sub>1</sub>, ..., A<sub>n</sub>, which are events, <span>usually</span> satisfy A<sub>1</sub>, ..., A<sub>n</sub> ⇒ B.
+As a result of evolutionary development, if such an operation assigns an evential percept <em>b</em> to a tuple (<em>a</em><sub>1</sub>, ..., <em>a</em><sub>n</sub>) of evential percepts, then their objects B, A<sub>1</sub>, ..., A<sub>n</sub>, which are events, <span>usually</span> satisfy A<sub>1</sub>, ..., A<sub>n</sub> ⇒ B.
 </dd>
 </dl>
 <p>
@@ -872,10 +872,10 @@ A <span>causal connection</span> of <em>p</em> with <em>q</em> is defined as a s
 </p>
 <ol>
 <li><em>a</em><sub>k</sub> is either equal to <em>p</em> or is a percept of a law.</li>
-<li>a<sub>k</sub> belongs to <em>f</em><sub>k</sub>({a<sub>0</sub>, ..., a<sub>k-1</sub>}) for a deductive operation <em>f</em><sub>k</sub> of the RU, where {a<sub>0</sub>, ..., a<sub>k-1</sub>} denotes the collection of a<sub>0</sub>, ..., a<sub>k-1</sub> and the meaning of <em>f</em><sub>k</sub>({a<sub>0</sub>, ..., a<sub>k-1</sub>}) is explained in the remark below.</li>
+<li><em>a</em><sub>k</sub> belongs to <em>f</em><sub>k</sub>({<em>a</em><sub>0</sub>, ..., <em>a</em><sub>k-1</sub>}) for a deductive operation <em>f</em><sub>k</sub> of the RU.</li>
 </ol>
 <p>
-If a causal connection of <em>p</em> with <em>q</em> exists, then we say that <em>p</em> is <span>causally connected</span> with <em>q</em> and let D(<em>p</em>,<em>q</em>) denote the minimal length of all such connections.
+Here, {<em>a</em><sub>0</sub>, ..., <em>a</em><sub>k-1</sub>} denotes the collection of <em>a</em><sub>0</sub>, ..., <em>a</em><sub>k-1</sub> and the meaning of <em>f</em><sub>k</sub>({<em>a</em><sub>0</sub>, ..., <em>a</em><sub>k-1</sub>}) is explained in the remark below.If a causal connection of <em>p</em> with <em>q</em> exists, then we say that <em>p</em> is <span>causally connected</span> with <em>q</em> and let D(<em>p</em>,<em>q</em>) denote the minimal length of all such connections.
 Clearly, D(<em>p</em>,<em>q</em>) = 0 if and only if <em>p</em> = <em>q</em>.
 The <span>causal graph</span> is then defined as the oriented graph whose nodes are the evential percepts and whose arrows are the causal connections.
 </p>
@@ -883,32 +883,32 @@ The <span>causal graph</span> is then defined as the oriented graph whose nodes 
 Let P, Q, A<sub>0</sub>, ..., A<sub>n</sub> respectively denote the objects of the evential percepts <em>p</em>, <em>q</em>, <em>a</em><sub>0</sub>, ..., <em>a</em><sub>n</sub> in the above definition of a causal connection.
 They are events.
 Since <em>a</em><sub>n</sub> = <em>q</em>, it follows that A<sub>n</sub> = Q.
-Suppose <em>a</em><sub>k</sub> satisfies condition 2.
-Then there exists a tuple (<em>b</em><sub>1</sub>, ..., <em>b</em><sub>k'</sub>) of evential percepts in {<em>a</em><sub>0</sub>, ..., <em>a</em><sub>k-1</sub>} such that <em>a</em><sub>k</sub> = <em>f</em><sub>k</sub>(<em>b</em><sub>1</sub>, ..., <em>b</em><sub>k'</sub>).
+Suppose <em>a</em><sub>k</sub> satisfies condition 2 above.
+Then, by definition, there exists a tuple (<em>b</em><sub>1</sub>, ..., <em>b</em><sub>k'</sub>) of evential percepts in {<em>a</em><sub>0</sub>, ..., <em>a</em><sub>k-1</sub>} such that <em>a</em><sub>k</sub> = <em>f</em><sub>k</sub>(<em>b</em><sub>1</sub>, ..., <em>b</em><sub>k'</sub>).
 Since <em>f</em><sub>k</sub> is a deductive operation, the objects B<sub>1</sub>, ..., B<sub>k'</sub> of <em>b</em><sub>1</sub>, ..., <em>b</em><sub>k'</sub> satisfy B<sub>1</sub>, ..., B<sub>k'</sub> ⇒ A<sub>k</sub>.
 Since B<sub>1</sub>, ..., B<sub>k'</sub> belong to {A<sub>0</sub>, ..., A<sub>k-1</sub>}, we conclude that A<sub>0</sub>, ..., A<sub>k-1</sub> ⇒ A<sub>k</sub>.
-If a<sub>k</sub> satisfies condition 1 above, then A<sub>k</sub> is either equal to P or is a law.
+If <em>a</em><sub>k</sub> satisfies condition 1 above, then A<sub>k</sub> is either equal to P or is a law.
 By applying these facts inductively, we can show that P ⇒ A<sub>k</sub> for each k, and in particular P ⇒ Q.
 Thus, the causal connection of <em>p</em> with <em>q</em> may be regarded as an internal explanation of why P ⇒ Q holds.</p>
 <p>
-As defined in &sect;1.1 (<a href="#L1">Basic Concepts in Logic 1</a>), an event is said to be contingent if it is not either necessary or impossible, that is, if it is unnecessary and possible.
+As defined in &sect;1.1 (<a href="#L1">Basic Concepts in Logic 1</a>), an event is said to be contingent if it is neither necessary nor impossible, that is, if it is unnecessary and possible.
 Accordingly, an evential percept is said to be contingent if its object is contingent.
 The above remark shows that if <em>p</em> is a contingent evential percept, then <em>p</em> is not causally connected with some evential percept, and some evential percept is not causally connected with <em>p</em>.
 </p>
 <dl>
-<dt>Hypotheses and Considerations on Emotion, Volition, and Memory</dt>
+<dt>Hypotheses on Emotion, Volition, and Memory</dt>
 <dd>Hypothesis 1. There exists a <span>value origin percept</span> <em>o</em>, that is, a percept of a <span>contingent</span> event called the <span>value origin event</span>.</dd>
 <dt>The assumption that the value origin event is contingent is not theoretically necessary.
 It is practically essential, because the most probable value origin event is the event ''my life continues,'' where life is defined as in <a href="#O5">Observation 5</a>, and this event appears to be contingent.</dt>
 <dd>Hypothesis 2. If an evential percept <em>p</em> is causally connected with the value origin percept <em>o</em>, then the <span>anti-value</span> of <em>p</em> is defined as D(<em>p</em>,<em>o</em>).</dd>
 <dd>Hypothesis 3. Emotion for an event is determined by the anti-values of its evential percepts.</dd>
-<dd>Hypothesis 4. Whether an action becomes a will and the strength of that will are determined by the anti-values of the evential percepts of the action.</dd>
+<dd>Hypothesis 4. Whether an action becomes a will and the strength of that will are determined by the anti-values of the evential percepts of the action, as an event.</dd>
 <dd>Hypothesis 5. Regarding memory, storage is provided by the RU, while recall is governed by the causal graph.
 Specifically, in deductive recall, each contingent evential percept <em>p</em> first recalls contingent evential percepts <em>q</em> such that D(<em>p</em>,<em>q</em>) is minimal, while in inductive recall, <em>p</em> first recalls contingent evential percepts <em>q</em> such that D(<em>q</em>,<em>p</em>) is minimal.</dd>
 </dl>
 <p>
 We may define <span>the self</span> as the IU equipped with the value origin percept and the causal graph.
-This definition is justified by the preceding Hypotheses and Considerations on Emotion, Volition, and Memory, which show that the self governs intellection, emotion, volition, and memory &mdash; that is, the entirety of our spiritual activity.
+This definition is justified by the preceding Hypotheses on Emotion, Volition, and Memory, which show that the self governs intellection, emotion, volition, and memory &mdash; that is, the entirety of our spiritual activity.
 Physical activities are consequences of this spiritual activity, enabled by effectors such as muscles.
 </p>
 <p>
