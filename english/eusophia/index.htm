@@ -4148,7 +4148,7 @@ For any pair (<em>a</em>,<em>b</em>) of events that possibly occur in that space
 </ol>
 </blockquote>
 <p>
-Here, ''real number'' should more generally be understood as an element of a <span>quantity system</span> discussed in <a href="../noology/index.htm" title="Mathematical Noology">MN</a>.
+It is a good exercise to see that the first condition can be replaced by the condition d(<em>a</em>,<em>a</em>) = 0.
 </p>
 <p>
 For example, within our universe, it is natural to let d(<em>a</em>,<em>b</em>) be the distance traveled by the ''hand'' of a clock &mdash; either man-made or natural &mdash; between the occurrence of event <em>a</em> and the occurrence of event <em>b</em>.
@@ -4160,12 +4160,12 @@ A sundial is likewise both man-made and natural, whose ''hand'' is the shadow.
 </p>
 <p>
 Under the assumption above, we call d(<em>a</em>,<em>b</em>) the <span>period</span> between events <em>a</em> and <em>b</em>.
-We then choose an arbitrary event <em>o</em> that possibly occurs and designate it as the <span>origin</span> of time.
+We then choose an arbitrary event <em>o</em> that possibly occurs and designate it as the <span>origin of time</span>.
 For any event <em>a</em> that possibly occurs, we call d(<em>o</em>,<em>a</em>) the <span>time</span> at which event <em>a</em> possibly occurs.
-Then the assumption above shows that d(<em>a</em>,<em>b</em>) = d(<em>o</em>,<em>b</em>) - d(<em>o</em>,<em>a</em>).</p>
+Then the assumption above shows that d(<em>a</em>,<em>b</em>) = - d(<em>o</em>,<em>a</em>) + d(<em>o</em>,<em>b</em>).</p>
 <p>
-For example, take the beginning of the day of Jesus Christ's birth as the origin of time, and let <em>t</em> be the length of a day &mdash; that is, the period between the beginning and the end of a day.
-For any event <em>a</em> that possibly occurs, divide the time of its occurrence by <em>t</em> and discard the remainder.
+For example, take the beginning of the day of Jesus Christ's birth as the origin of time, and let <em>g</em> be the length of a day &mdash; that is, the period between the beginning and the end of a day.
+For any event <em>a</em> that possibly occurs, divide the time of its occurrence by <em>g</em> and discard the remainder.
 Then, divide the resulting integer by 365 and discard the remainder.
 The resulting integer gives the Gregorian year in which <em>a</em> possibly occurs.
 </p>
@@ -4177,7 +4177,7 @@ For each event <em>a</em> that possibly occurs, there exists an event <em>c</em>
 </blockquote>
 <p>
 We call the collection a <span>clock</span>, and call the events in the clock the ''hand positions'' of the clock.
-Under this definition, if d(<em>o</em>,<em>a</em>) = d(<em>o</em>,<em>c</em>) and d(<em>o</em>,<em>b</em>) = d(<em>o</em>,<em>c'</em>) for hand positions <em>c</em> and <em>c'</em>, then d(<em>a</em>,<em>b</em>) = d(<em>o</em>,<em>b</em>) - d(<em>o</em>,<em>a</em>) = d(<em>o</em>,<em>c'</em>) - d(<em>o</em>,<em>c</em>), and we may call d(<em>o</em>,<em>c'</em>) - d(<em>o</em>,<em>c</em>) the distance traveled by the ''hand'' of the clock between the occurrence of event <em>a</em> and the occurrence of event <em>b</em>, as we did in the above example.
+Under this definition, if d(<em>o</em>,<em>a</em>) = d(<em>o</em>,<em>c</em>) and d(<em>o</em>,<em>b</em>) = d(<em>o</em>,<em>c'</em>) for hand positions <em>c</em> and <em>c'</em>, then d(<em>a</em>,<em>b</em>) = - d(<em>o</em>,<em>a</em>) + d(<em>o</em>,<em>b</em>) = - d(<em>o</em>,<em>c</em>) + d(<em>o</em>,<em>c'</em>), and we may call - d(<em>o</em>,<em>c</em>) + d(<em>o</em>,<em>c'</em>) the distance traveled by the ''hand'' of the clock between the occurrence of event <em>a</em> and the occurrence of event <em>b</em>, as we did in the above example.
 Thus, the time defined under the assumption above is determined by a clock as in the above example.
 </p>
 <p>
@@ -4230,6 +4230,51 @@ This fact itself should be taken as sufficient justification.
 Economics, when applied, may indeed cause inconvenience in the real world, but that is likely due not to its undefined terms or circularity, but rather to deficiencies in the mathematical models themselves.
 A theory that is not employed in the real world will persist without ever having its internal contradictions examined.
 That is a vain state of affairs.
+</p>
+<p>
+We may extend the above theory of space and time, so that they can be dealt with simultaneously.
+To do so, it suffices to replace ''natural number'' with ''a quadruple of natural numbers,'' and for such quadruples, define:
+</p>
+<blockquote>
+-(w, x, y, z) = (-w, -x, -y, -z)<br>
+(s, t, u, v) + (w, x, y, z) = (s+w, t+x, u+y, v+z)
+</blockquote>
+<p>
+This definition may be extended to tuples of arbitrary length.
+</p>
+
+<p>
+Then we may introduce the same assumption as above and follow the same procedure as above.
+Here, however, d(<em>a</em>,<em>b</em>) should be called the <span>space-time distance</span> between events <em>a</em> and <em>b</em>.
+Moreover, <em>o</em> should be called the <span>origin of space-time</span>, and d(<em>o</em>,<em>a</em>) should be called the <span>place-time</span> at which event <em>a</em> possibly occurs.
+Furthermore, we can define a <span>space-time clock</span> as above, although no man-made space-time clock seems to exist.
+</p>
+<p>
+For each quadruple (w, x, y, z), define
+</p>
+<blockquote>
+e(w, x, y, z) = (w, x, y) and f(w, x, y, z) = z.
+</blockquote>
+<p>
+It is a good exercise to see that the following holds:
+</p>
+<blockquote>
+d(<em>b</em>,<em>a</em>) = - d(<em>a</em>,<em>b</em>) if and only if
+e(d(<em>b</em>,<em>a</em>)) = - e(d(<em>a</em>,<em>b</em>)) and
+f(d(<em>b</em>,<em>a</em>)) = - f(d(<em>a</em>,<em>b</em>))<br>
+d(<em>a</em>,<em>b</em>) = d(<em>a</em>,<em>c</em>) + d(<em>c</em>,<em>b</em>) if and only if
+e(d(<em>a</em>,<em>b</em>)) = e(d(<em>a</em>,<em>c</em>)) + e(d(<em>c</em>,<em>b</em>)) and
+f(d(<em>a</em>,<em>b</em>)) = f(d(<em>a</em>,<em>c</em>)) + f(d(<em>c</em>,<em>b</em>))
+</blockquote>
+<p>
+Thus, the real number f(d(<em>a</em>,<em>b</em>)) corresponding to each pair (<em>a</em>,<em>b</em>) of events that possibly occur in that space satisfies the above assumption, and therefore determines the time in the space.
+The triple e(d(<em>a</em>,<em>b</em>)) of real numbers may be regarded as determining the place in the space.
+</p>
+<p>
+We may further extend the above theory by replacing ''a quadruple of natural numbers'' with ''an element of a given vector space,'' and further extend it by replacing ''vector space'' with ''group.''
+The concept of the vector space is basic and taught in the first year at Japanese colleges.
+The above theory is essentially equivalent to the extended theory based on a four-dimensional real vector space.
+In this extended theory, space and time are not distinguished, or rather, are distinguished only arbitrarily.
 </p>
 
 <h3 id="TIME">Sense of Time and Sense of Space</h3>
