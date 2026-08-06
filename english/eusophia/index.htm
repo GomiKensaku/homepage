@@ -984,6 +984,7 @@ Then the following six expressions are equivalent by definition:
 <p>
 If n = 0, then A<sub>1</sub>, ..., A<sub>n</sub> should be understood not to exist, and similarly for A<sub>2</sub>, ..., A<sub>n</sub> in the case n = 1.
 This definition in particular says that the symbolic expression 6 may be read as the expressions 1 through 5, especially as 2 or 3.
+Obviously, A ⇒ A for each event A.
 </p>
 <p>
 If n = 0 in the expression A<sub>1</sub>, ..., A<sub>n</sub> ⇒ B, it is denoted by () ⇒ B.
@@ -1916,14 +1917,14 @@ However, the actual nature of these non-human languages is not well understood.
 This theory is natural and easy to understand.
 Here, ''space'' refers to the totality of events within an arbitrary universe (noo-world).
 Recall from &sect;3.3 (<a href="#S3.3">Causality and Necessity</a>) and &sect;3.9.2 (<a href="#S3.9.2">Mistakes in Paradoxes</a>) that A ⇒ A for each event A and that, if A ⇒ B and B ⇒ C for events A, B, and C, then A ⇒ C.
-We introduce the following assumption.
+We assume the following:
 </p>
 <blockquote>
 Assumption 1:
 For a positive integer k and any pair (A,B) of events with A ⇒ B, there corresponds a k-tuple d(A,B) of <span>nonnegative</span> numbers, which satisfies the following two conditions:
 <ol>
-<li>d(A,A) = 0</li>
-<li>If A ⇒ B and B ⇒ C, then d(A,B) + d(B,C) = d(A,C)</li>
+<li>d(A,A) = 0.</li>
+<li>If A ⇒ B and B ⇒ C, then d(A,B) + d(B,C) = d(A,C).</li>
 </ol>
 </blockquote>
 <p>
@@ -1934,34 +1935,39 @@ Here, 0 denotes the k-tuple of zeros, and for any pair of k-tuples (<em>a</em><s
 </blockquote>
 <p>
 Also, - (<em>a</em><sub>1</sub>, ..., <em>a</em><sub>k</sub>) = (- <em>a</em><sub>1</sub>, ..., - <em>a</em><sub>k</sub>) for each k-tuple (<em>a</em><sub>1</sub>, ..., <em>a</em><sub>k</sub>) of numbers.
-This implies that if A ⇒ B and B ⇒ A, then d(B,A) = - d(A,B), hence d(A,B) = d(B,A) = 0.
+It is a good exercise to see that if A ⇒ B and B ⇒ A, then d(B,A) = - d(A,B), hence d(A,B) = d(B,A) = 0.
 </p>
 <p>
 Under Assumption 1, we call d(A,B) the <span>causal distance</span> from A to B.
 We then choose an arbitrary impossible event O and designate it as the <span>causal origin</span>.
-Then, since O ⇒ A for each event A, there corresponds d(O,A), which we call the <span>causal place</span> at which event A occurs.
-Then the conditions in Assumption 1 show that if A ⇒ B, then d(A,B) = - d(O,A) + d(O,B).
-Therefore, we can extend the definition of the causal distance d(A,B) to any pair (A,B) of events by d(A,B) = - d(O,A) + d(O,B).
+Then, - O is necessary.
+Therefore, - A ⇒ - O for each event A, hence O ⇒ A by <a href="#LAW6">Law 6</a> in &sect;3.9.2, and thus there corresponds d(O,A), which we call the <span>causal place</span> at which event A occurs.
+The causal place does not depend on the choice of the causal origin.
+Indeed, if O' is also an impossible event, then, since O' ⇒ O as well as O ⇒ O', if follows that d(O,O') = 0, and the condition 2 shows that d(O',A) = d(O,A) for each event A.
+Therefore, we denote d(O,A) by d(A).
+</p>
+<p>
+The conditions 1 and 2 show that if A ⇒ B, then d(A,B) = - d(A) + d(B).
+Therefore, we can extend the definition of the causal distance d(A,B) to any pair (A,B) of events by d(A,B) = - d(A) + d(B).
 The extended causal distance is a k-tuple of numbers that are not necessarily nonnegative, and satisfy the following:
 </p>
 <ol>
-<li>d(A,A) = 0</li>
-<li>d(A,B) + d(B,C) = d(A,C)</li>
-<li>d(B,A) = - d(A,B)</li>
+<li>d(A,A) = 0.</li>
+<li>d(A,B) + d(B,C) = d(A,C).</li>
+<li>d(B,A) = - d(A,B).</li>
 </ol>
 <p>
 If d(A,B) is not a k-tuple of nonnegative numbers, it is not the case that A ⇒ B.
-If A is impossible, then d(O,A) = 0, because A ⇒ O as well as O ⇒ A.
 </p>
 <p>
-In view of the above, we hereafter consider under the following assumption.
+In view of the above, we hereafter consider under the following assumption:
 </p>
 <blockquote>
 Assumption 2:
 For a positive integer k and any pair (A,B) of events, there corresponds a k-tuple d(A,B) of numbers which satisfies the following two conditions:
 <ol>
-<li>d(B,A) = - d(A,B)</li>
-<li>d(A,B) + d(B,C) = d(A,C)</li>
+<li>d(B,A) = - d(A,B).</li>
+<li>d(A,B) + d(B,C) = d(A,C).</li>
 </ol>
 </blockquote>
 <p>
@@ -1979,18 +1985,62 @@ The move of the sun in the heaven provides a purely natural clock, whose hand is
 Under Assumption 2, we call d(A,B) the <span>space-time distance</span> from A to B.
 We then choose an arbitrary event O and designate it as the <span>origin of space-time</span>.
 For any event A, we call d(O,A) the <span>place-time</span> (not to be confused with space-time) at which event A occurs.
-Then the conditions in Assumption 2 show that d(A,B) = - d(O,A) + d(O,B).
-</p>
-<p>
-Under Assumption 2, there exists a collection of events for which the following holds:
+Then the conditions in Assumption 2 show that
 </p>
 <blockquote>
-For each event A, there exists an event C in that collection satisfying d(O,A) = d(O,C).
+d(A,B) = - d(O,A) + d(O,B).
 </blockquote>
 <p>
-We call the collection a <span>space-time clock</span>, and call the events in the clock the <span>hand positions</span> of the clock.
-Under this definition, if d(O,A) = d(O,C) and d(O,B) = d(O,C') for hand positions C and C', then d(A,B) = - d(O,A) + d(O,B) = - d(O,C) + d(O,C') = d(C,C'), and we may call d(C,C') the space-time distance traveled by the hand of the clock between the occurrence of A and the occurrence of B, as we did in the above example.
+The place-time depends on the choice of O.
+Indeed, if we replace O with an event O', then the condition 2 in Assumption 2 shows that
+</p>
+<blockquote>
+ d(O',A) = d(O',O) + d(O,A).
+</blockquote>
+<p>
+However, the concepts introduced below do not depend on the choice of O.
+</p>
+<p>
+Let A and B be events.
+It is a good exercise to see that the following four conditions are equivalent:
+</p>
+<ul>
+<li>d(A,B) = 0.</li>
+<li>d(A,C) = d(B,C) for any event C.</li>
+<li>d(C,A) = d(C,B) for any event C.</li>
+<li>d(O,A) = d(O,B).</li>
+</ul>
+<p>
+If these conditions hold, A is called <span>place-time equivalent</span> to B.
+Obviously, the following holds:
+</p>
+<ul>
+<li>Each event A is place-time equivalent to itself.</li>
+<li>If A is place-time equivalent to B, then B is place-time equivalent to A.</li>
+<li>If A is place-time equivalent to B and B is place-time equivalent to C, then A is place-time equivalent to C.</li>
+</ul>
+<p>
+Therefore, as well-known, the totality of events is partitioned into classes so that two events A and B belong to the same class if and only if A is place-time equivalent to B.
+Such classes are called the <span>place-time classes</span>.
+</p>
+<p>
+Let K be the totality of representatives of the place-time classes.
+Then the following holds:
+</p>
+<blockquote>
+For each event A, there exists a unique event C in K satisfying d(O,A) = d(O,C).
+</blockquote>
+<p>
+Conversely, if a collection of events satisfies this condition, then it is the totality of representatives of the place-time classes.
+We call K a <span>space-time clock</span>, and call the events in K the <span>hand positions</span> of K.
+Let A and B be events, and suppose d(O,A) = d(O,C) and d(O,B) = d(O,D) for hand positions C and D of K.
+Then d(A,B) = - d(O,A) + d(O,B) = - d(O,C) + d(O,D) = d(C,D), and we may call d(C,D) the space-time distance traveled by the hand of the clock between the occurrence of A and the occurrence of B, as we did in the above example.
 Thus, the place-time defined under Assumption 2 is determined by a space-time clock as in the above example, although man-made clocks do not necessarily exist.
+</p>
+<p>
+The space-time clock is essentially unique.
+If K' is another space-time clock, then there exists a one-to-one correspondence between K and K'; for each hand position C of K, there exists precisely one hand position C' of K' satisfying d(C,C') = 0, and vice versa.
+However, the place-time is not uniquely determined, but dependent on the choice of the space-time origin, as noted above.
 </p>
 <p>
 Assume k = 1 in Assumption 2.
