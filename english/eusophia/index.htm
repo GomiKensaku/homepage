@@ -2002,12 +2002,14 @@ However, the concepts introduced below do not depend on the choice of O.
 </p>
 <p>
 Let A and B be events.
-It is a good exercise to see that the following four conditions are equivalent:
+It is a good exercise to see that the following six conditions are equivalent:
 </p>
 <ul>
 <li>d(A,B) = 0.</li>
 <li>d(A,C) = d(B,C) for any event C.</li>
+<li>d(A,C) = d(B,C) for some event C.</li>
 <li>d(C,A) = d(C,B) for any event C.</li>
+<li>d(C,A) = d(C,B) for some event C.</li>
 <li>d(O,A) = d(O,B).</li>
 </ul>
 <p>
@@ -2028,7 +2030,7 @@ Let K be the totality of representatives of the place-time classes.
 Then the following holds:
 </p>
 <blockquote>
-For each event A, there exists a unique event C in K satisfying d(O,A) = d(O,C).
+For each event A, there exists a unique event C in K satisfying d(O,A) = d(O,C), that is, C is place-time equivalent to A.
 </blockquote>
 <p>
 Conversely, if a collection of events satisfies this condition, then it is the totality of representatives of the place-time classes.
@@ -2038,9 +2040,10 @@ Then d(A,B) = - d(O,A) + d(O,B) = - d(O,C) + d(O,D) = d(C,D), and we may call d(
 Thus, the place-time defined under Assumption 2 is determined by a space-time clock as in the above example, although man-made clocks do not necessarily exist.
 </p>
 <p>
-The space-time clock is essentially unique.
-If K' is another space-time clock, then there exists a one-to-one correspondence between K and K'; for each hand position C of K, there exists precisely one hand position C' of K' satisfying d(C,C') = 0, and vice versa.
-However, the place-time is not uniquely determined, but dependent on the choice of the space-time origin, as noted above.
+Let O' be another space-time origin, and K' be another space-time clock.
+Let A be an event.
+Let C and C' be hand positions in K and K', respectively, for which d(O,A) = d(O,C) and d(O',A) = d(O',C').
+Then the above definition of space-time equivalence shows that C is space-time equivalent to C'.
 </p>
 <p>
 Assume k = 1 in Assumption 2.
