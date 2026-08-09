@@ -832,7 +832,7 @@ As for criticism and rebuttal between politicians and scholars, it is appropriat
 <li><a href="#S3.8">Self, Values, Emotion, Volition, and Memory</a></li>
 <li><a href="#S3.9">Set, Mathematics, and Mathematical Science</a>
 <li><a href="#S3.10">Set-theoretical Definition of Language</a></li>
-<li><a href="#S3.11">Mathematical Theory of Space-time</a></li>
+<li><a href="#S3.11">Theory of Dynamic Space and Time</a></li>
 <li><a href="#S3.12">Sense of Time and Sense of Space</a></li>
 </ol>
 
@@ -1911,9 +1911,155 @@ For example, the roar of a beast, the song of a bird, and the pheromones of inse
 However, the actual nature of these non-human languages is not well understood.
 </p>
 
-<h3 id="S3.11">3.11. Mathematical Theory of Space-time</h3>
+<h3 id="S3.11">3.11. Theory of Dynamic Space and Time</h3>
 
-(to be written)
+<p>
+The theory presented here is natural and easy to understand, provided that one has basic knowledge of sets and mathematics.
+Here, ''space'' refers to a collection of events within a universe (noo-world) as defined in &sect;3.2 (<a href="#S3.2">Answer to Question 2</a>).
+We may regard this space as a set by constructing an adequate mathematical model of the universe.
+We assume the following:
+</p>
+<blockquote>
+Assumption:
+For a space S, a positive integer h, and any pair (A,B) of events in S, there corresponds an (h+1)-tuple d(A,B) of numbers which satisfies the following two conditions:
+<ol>
+<li>d(B,A) = - d(A,B).</li>
+<li>d(A,B) + d(B,C) = d(A,C).</li>
+</ol>
+</blockquote>
+<p>
+It is a good exercise to see that condition 1 can be replaced with the condition d(A,A) = 0.
+We call S a <span>dynamic system</span> and call h its <span>place dimension</span>.
+</p>
+<p>
+For each (h+1)-tuple (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>, <em>t</em>) of numbers, we define
+</p>
+<blockquote>
+f(<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>, <em>t</em>) = (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>),<br>
+g(<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>, <em>t</em>) = <em>t</em>.
+</blockquote>
+<p>
+Then, for any pair (A,B) of events in S, we define
+</p>
+<blockquote>
+p(A,B) = f(d(A,B)),<br>
+q(A,B) = g(d(A,B)).
+</blockquote>
+<p>
+It is a good exercise to see that the following holds:
+</p>
+<ul>
+<li>p(B,A) = - p(A,B),<br>q(B,A) = - q(A,B).</li>
+<li>p(A,B) + p(B,C) = p(A,C),<br>q(A,B) + q(B,C) = q(A,C).</li>
+</ul>
+<p>
+We call p(A,B) the <span>distance</span> from A to B, and call q(A,B) the <span>period</span> from A to B.
+</p>
+<p>
+We then choose an arbitrary event O in S and designate it as the <span>origin of place and time</span>.
+For any event A in S, we call p(O,A) the <span>place</span> at which A occurs, and call q(O,A) the <span>time</span> at which A occurs.
+The following holds:
+</p>
+<blockquote>
+d(A,B) = - d(O,A) + d(O,B),<br>
+p(A,B) = - p(O,A) + p(O,B),<br>
+q(A,B) = - q(O,A) + q(O,B).
+</blockquote>
+<p>
+If d(O,A) = (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>, <em>t</em>), we say that A occurs at the place (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>) and at the time <em>t</em>.
+The place and time depend on the choice of O.
+Indeed, if we replace O with an event O' in S, then the following holds:
+</p>
+<blockquote>
+d(O',A) = d(O',O) + d(O,A),<br>
+p(O',A) = p(O',O) + p(O,A),<br>
+q(O',A) = q(O',O) + q(O,A).
+</blockquote>
+<p>
+However, the concepts of the time classes and the clock introduced below do not depend on the choice of O.
+</p><p>
+Let A and B be events in S.
+It is a good exercise to see that the following three conditions are equivalent:
+</p>
+<ul>
+<li>q(A,B) = 0.</li>
+<li>q(B,A) = 0.</li>
+<li>q(O,A) = q(O,B).</li>
+</ul>
+<p>
+If these conditions hold, we say that A and B <span>occur at the same time</span>.
+This relationship between events is an equivalence relation.
+Therefore, the totality of events in S is partitioned into classes such that two events A and B in S belong to the same class if and only if A and B occur at the same time.
+Such classes are called the <span>time classes</span>.
+</p>
+<p>
+Let K be the totality of representatives of the time classes.
+Then the following holds:
+</p>
+<blockquote>
+For each event A in S, there exists a unique event C in K for which q(O,A) = q(O,C), that is, A and C occur at the same time.
+</blockquote>
+<p>
+Conversely, if a collection K of events in S satisfies this condition, then it is the totality of representatives of the time classes.
+We call K a <span>clock</span>, and call the events in K the <span>hand positions</span> of K.
+Let A and B be events in S, and suppose q(O,A) = q(O,C) and q(O,B) = q(O,D) for hand positions C and D of K.
+Then q(A,B) = - q(O,A) + q(O,B) = - q(O,C) + q(O,D) = q(C,D), and we may call q(C,D) the distance traveled by the hand of the clock between the occurrence of A and the occurrence of B.
+In this sense, there exists essentially one clock and it determines the period q(A,B) for each pair (A,B) of events in S.
+</p>
+<p>
+Recall from &sect;3.2 (<a href="#S3.2">Answer to Question 2</a>) that an intellectual object is called an entity if it makes sense to ask whether it exists.
+For each entity <em>a</em>, we denote the event ''<em>a</em> exists'' by E<sub><em>a</em></sub>.
+If E<sub><em>a</em></sub> belongs to S, we call <em>a</em> <span>dynamic</span>, and if d(O,E<sub><em>a</em></sub>) = (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>, <em>t</em>), then we say that <em>a</em> exists at the place (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>) and at the time <em>t</em>.
+For each pair (A,B) of events in S, we defined the distance p(A,B) from A to B.
+In particular, for each pair (<em>a</em>,<em>b</em>) of dynamic entities, we call p(E<sub><em>a</em></sub>,E<sub><em>b</em></sub>) the <span>distance</span> from <em>a</em> to <em>b</em>.
+By definition, a <span>dynamic point</span> is a dynamic entity whose attributes do not involve the distance defined above.
+Then, we define a <span>point motion</span> as a mapping m which assigns to each number <em>t</em> a dynamic point m(<em>t</em>) satisfying the following condition:
+</p>
+<blockquote>
+q(O,E<sub>m(<em>t</em>)</sub>) = <em>t</em>.
+</blockquote>
+<p>
+Then, defining F(<em>t</em>) = p(O,E<sub>m(<em>t</em>)</sub>), we have
+</p>
+<blockquote>
+d(O,E<sub>m(<em>t</em>)</sub>) = (F(<em>t</em>), <em>t</em>).
+</blockquote>
+<p>
+Here, if F(<em>t</em>) = (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>), then (F(<em>t</em>), <em>t</em>) denotes (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>, <em>t</em>), and therefore, m(<em>t</em>) exists at the place (<em>x</em><sub>1</sub>, ..., <em>x</em><sub>h</sub>) and at the time <em>t</em>.
+Thus, the totality G of d(O,E<sub>m(<em>t</em>)</sub>) as <em>t</em> ranges over all numbers is what we usually call the graph of the function F(<em>t</em>).
+</p>
+<p>
+This concludes our natural and easily understandable theory of dynamic space and time.
+Some remarks may be in order.
+</p>
+<p>
+In the explanation of <a href="#PAST">Observation (12)</a> in &sect;Introduction, I suggested that there does not exist any dynamice space in the universe (noo-world) that is the object of mathematicians' intellection, by writing: ''Mathematics, though free from attachment to the past, is equally free from orientation toward the future, enabling mathematicians to dwell in a timeless universe.''
+</p>
+<p>
+More seriously, the theory above, in fact, defines neither place nor time, because Assumption already implicitly contained the very notion of place and time.
+In other words, it contains a circularity.
+</p>
+<p>
+However, circularity is ubiquitous in the world.
+Everyone knows that dictionaries are full of circular definitions.
+Less well known &mdash; but equally true &mdash; is that even mathematics, regarded as the most rigorous of disciplines, contains a circularity.
+The concept of the set, which is taken as foundational in mathematics in &sect;3.9.3 (<a href="#S3.9.3">Mathematics and Sets</a>), is based on the undefined notion of the intellectual object, as is clear from the explanation in &sect;3.9.1 (<a href="#S3.9.1">Noological Set Theory</a>).
+And as explained in &sect;3.9.4 (<a href="#S3.9.4">Mathematical Science and Models</a>), mathematicians, engaging in mathematical science, construct mathematical models of intellectual objects using sets, analyze those models, and thereby attempt to deepen their understanding of intellectual objects.
+This is a kind of circularity.
+From a more critical perspective, one might say that the reason many mathematicians remain within mathematics without engaging in mathematical science is that, by doing so &mdash; and by simply forgetting the existence of the undefined notion of the intellectual object in set theory &mdash; they can indulge in the self-satisfaction that mathematics is rigorous.
+</p>
+<p>
+In general, even if a discipline contains undefined terms or circularity, no inconvenience arises in the real world that makes use of that discipline.
+This fact itself should be taken as sufficient justification.
+A theory that is not employed in the real world will persist without ever having its internal contradictions examined.
+That is a vain state of affairs.
+</p>
+<p>
+We may further extend the above theory by replacing ''an (h+1)-tuple of real numbers'' with ''an element of a given vector space,'' and ultimately extend it by replacing ''vector space'' with ''group.''
+Although the concept of the group is not basic, that of the vector space is basic and taught in the first year at Japanese colleges.
+The above theory is essentially equivalent to the extended theory based on an (h+1)-dimensional real vector space.
+In this extended theory, place and time are not distinguished at all, or rather, are distinguished only arbitrarily.
+</p>
 
 <h3 id="S3.12">3.12. Sense of Time and Sense of Space</h3>
 
@@ -1955,7 +2101,7 @@ Within the MS (mental system) discussed in &sect;3.8 (<a href="#S3.8">Self, Valu
 The greater the accumulation, the longer the elapsed time feels.
 </p>
 <p>
-I answer the question ''What is time?'' in &sect;3.11 (<a href="#S3.11">Mathematical Theory of Space-time</a>).
+I answer the question ''What is time?'' in &sect;3.11 (<a href="#S3.11">Theory of Dynamic Space and Time</a>).
 Using the concepts introduced there, we can reformulate the above explanation as follows.
 Namely, the accumulation of evential percepts can be regarded as a sequence of events.
 If we denote the first and last events of this sequence by A and B, then the exact period d(A,B) between them is, in subjective experience, approximated by the number of events lying between A and B.
